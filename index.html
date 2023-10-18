@@ -25,6 +25,42 @@
             text-align: center;
             padding: 20px 0;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Responsive styling for buttons */
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #005f8b;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
         .container {
             max-width: 90%;
@@ -49,28 +85,58 @@
             margin-right: 15px;
         }
 
-        .button-container {
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive design for the store examples */
+        .store-examples {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .button {
-            background-color: #0077b6;
-            color: #fff;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            margin: 10px;
+        .store {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .store img {
+            width: 400px;
+            height: auto;
             cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s;
         }
 
-        .button:hover {
-            background-color: #005f8b;
+        .store img:hover {
+            transform: scale(1.1);
+        }
+
+        .store-modal {
+            display: none;
+            position: fixed;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .store-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -86,13 +152,15 @@
             funcionalidad de vanguardia, lo que le permitirá ampliar su presencia en línea y aumentar sus ventas.</p>
         <p>Mi propuesta incluye:</p>
         <ul>
-            <li><strong>Desarrollo del Sitio Web:</strong> Utilizare las últimas tecnologías para crear un sitio web moderno y
+            <li><strong>Desarrollo del Sitio Web:</strong> Utilizare las últimas tecnologías para crear un sitio web
+                moderno y
                 atractivo que refleje la identidad de su empresa. Esto incluye el diseño de páginas, menús de navegación
                 y la optimización de la velocidad de carga.</li>
             <li><strong>Base de Datos MySQL:</strong> Desarrollare una base de datos sólida para gestionar productos,
                 pedidos y clientes. Esto asegura una gestión eficiente y segura de la información.</li>
             <li><strong>Implementación de Tienda en Línea:</strong> Configurare una tienda en línea utilizando
-                rutas optimizadas de URL para cada categoría, permitiéndole listar hasta 100 productos con imágenes, descripciones detalladas
+                rutas optimizadas de URL para cada categoría, permitiéndole listar hasta 100 productos con imágenes,
+                descripciones detalladas
                 y opciones de pago seguras utilizando la API de del banco BAC.</li>
             <li><strong>Integración de Pasarelas de Pago:</strong> Implementaremos la API del banco BAC para habilitar
                 opciones de pago seguras y confiables, brindando a sus clientes una experiencia de compra sin problemas.
@@ -100,21 +168,26 @@
             <li><strong>Optimización SEO:</strong> Asegurare que su sitio web esté optimizado para los motores de
                 búsqueda (SEO) para mejorar su visibilidad en línea y atraer más tráfico orgánico.</li>
             <li><strong>Capas de Seguridad:</strong> Implementare múltiples capas de seguridad para proteger su sitio
-                web y los datos de sus clientes. Esto incluye cifrado en pasarelas de pago y medidas contra amenazas cibernéticas.
+                web y los datos de sus clientes. Esto incluye cifrado en pasarelas de pago y medidas contra amenazas
+                cibernéticas.
             </li>
-            <li><strong>Soluciones de Optimización:</strong> Utilizare tecnologías optimas en la infraestructura para garantizar un
+            <li><strong>Soluciones de Optimización:</strong> Utilizare tecnologías optimas en la infraestructura para
+                garantizar un
                 rendimiento óptimo. Implementare rutas amigables, caché de páginas y una carga rápida para mejorar la
                 experiencia del usuario.</li>
-            <li><strong>Configuración Inicial:</strong> Realizare la configuración inicial, lo que asegurará una
-                administración eficiente del contenido del sitio y los productos de la tienda.</li>
-                
+            <li><strong>Configuración Inicial:</strong> Realizaré la configuración inicial, lo que asegurará una
+                administración eficiente del contenido del sitio y los productos de la tienda. Además, crearé un manual
+                básico de la base de datos, datos de acceso y configuraciones básicas, lo que le permitirá tener un control completo
+                desde el principio.</li>
             <li><strong>Mantenimiento y Soporte:</strong> Servicio de mantenimiento continuo durante 3 meses para
-                garantizar que su sitio funcione sin problemas y se mantenga al día con las últimas actualizaciones de
-                seguridad.</li>
-        </ul>
+                garantizar que su sitio funcione sin problemas y se mantenga al día con las últimas actualizaciones de seguridad. 
+                Al finalizar los 3 meses, el mantenimiento y soporte tendrán un costo mensual y recurrente de $225, lo que asegurará que
+                su sitio web se mantenga optimizado y seguro a largo plazo.</ul>
+
         <p>El costo total para este proyecto es de $970. Esto incluye el diseño, desarrollo,
             configuración de la tienda en línea, integración de la API del banco BAC y capacitación. A partir del mes de
-            Noviembre, ofrezco el servicio de mantenimiento mensual durante 3 meses para garantizar que su sitio esté siempre
+            Noviembre, ofrezco el servicio de mantenimiento mensual durante 3 meses para garantizar que su sitio esté
+            siempre
             actualizado y funcionando de manera óptima.</p>
         <p><strong>Condiciones de Pago:</strong> El costo total para este proyecto es de $970.
             Esto con un pago inicial del 50% para comenzar el desarrollo, y el 50% restante se debe abonar al completar
@@ -125,16 +198,60 @@
             Espero tener la oportunidad de trabajar juntos en este emocionante proyecto que llevará su negocio al
             siguiente nivel.</p>
 
-            <div class="button-container">
-                <!-- Botón para la Opción 1 -->
-                <a href="https://wa.me/50586921636?text=He%20aceptado%20la%20propuesta%20de%20tu%20cotizacion" target="_blank"
-                    class="button">Acepto la Propuesta</a>
+        <h1>Mi Experiencia en Tiendas en Línea</h1>
+
+
+        <div class="store-examples">
+            <div class="store">
+                <img src="lolaslenceria.png" alt="Lola's Lencería"
+                    onclick="openModal('lolaslenceria.png', 'Lola\'s Lencería')">
+                <h2>Lola's Lencería</h2>
+                <p>Desarrolle el backend de la tienda en línea <a href="https://www.lolaslenceria.com/"
+                        target="_blank">Lola's Lencería</a> en colaboración con un profesional en Frontend. Esta
+                    tienda ofrece una amplia gama de productos y una experiencia de compra sencilla.</p>
             </div>
+
+            <div class="store">
+                <img src="megajerusalem.png" alt="Mega Jerusalem"
+                    onclick="openModal('megajerusalem.png', 'Mega Jerusalem')">
+                <h2>Mega Jerusalem</h2>
+                <p>Fui responsable de desarrollar tanto el frontend como el backend del prototipo de la tienda en
+                    línea <a href="https://megajerusalem.com/" target="_blank">Mega Jerusalem</a>. Esta tienda destaca
+                    por su diseño atractivo y su funcionalidad eficiente.</p>
+            </div>
+        </div>
+
+        <div class="store-modal" id="myModal">
+            <span class="store-modal-close" onclick="closeModal()">&times;</span>
+            <img class="store-modal-content" id="img01">
+        </div>
+
+
+
+        <div class="button-container">
+            <!-- Botón para la Opción 1 -->
+            <a href="https://wa.me/50586921636?text=He%20aceptado%20la%20propuesta%20de%20tu%20cotizacion"
+                target="_blank" class="button">Acepto la Propuesta</a>
+        </div>
 
         <p>Atentamente,</p>
         <p>Gabriel Vargas</p>
         <p>Ingeniero en Sistemas & Desarrollador Web</p>
     </div>
 </body>
+<script>
+    function openModal(imageName, altText) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = imageName;
+        modalImg.alt = altText;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
 
 </html>
